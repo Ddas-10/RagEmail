@@ -1,0 +1,27 @@
+{
+  "total_chunks": 843,
+  "raptor_chunks": 158,
+  "thread_ids": [
+    "T-2C842171",
+    "T-9114D5B0",
+    "T-6E3F5AD7",
+    "T-E37B030A",
+    "T-ADC28EE6",
+    "T-47159535",
+    "T-F59926A2",
+    "T-56F00ED9",
+    "T-46293836",
+    "T-F31891E0",
+    "T-5E207662",
+    "T-5CADBCA8",
+    "T-BADA59FE",
+    "T-4230FE8B",
+    "T-134D3F1C",
+    "T-3F952F26",
+    "T-CACBA3E0",
+    "T-0506E372",
+    "T-3DF5778B"
+  ],
+  "embed_model": "BAAI/bge-small-en-v1.5",
+  "dim": 384
+}

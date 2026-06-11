@@ -1,0 +1,33 @@
+# Python virtual environment — DO NOT copy into image (1.7 GB)
+venv/
+.venv/
+env/
+
+# Raw Kaggle dataset — not needed in image (1.7 GB)
+data/raw/
+
+# SetFit training checkpoints — training artefacts, not needed at runtime (380 MB)
+checkpoints/
+
+# Python bytecode
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Run logs — generated at runtime, not baked into image
+runs/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Git
+.git/
+.gitignore

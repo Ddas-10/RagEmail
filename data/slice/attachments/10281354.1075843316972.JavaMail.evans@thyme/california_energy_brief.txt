@@ -1,0 +1,28 @@
+
+CALIFORNIA ENERGY CRISIS BRIEFING
+Prepared for Executive Review
+Date: November 15, 2000
+
+PAGE 1 - EXECUTIVE SUMMARY
+The California energy market is experiencing unprecedented price spikes.
+Wholesale electricity prices have risen from an average of \/MWh in 1999
+to over \/MWh during peak hours in November 2000.
+The California ISO (Cal-ISO) has declared Stage 2 and Stage 3 emergencies.
+Enron Energy Services has an opportunity to provide 500 MW of contracted capacity.
+
+PAGE 2 - MARKET ANALYSIS
+Key drivers of the current crisis:
+1. Drought reducing hydroelectric output by approximately 30 percent.
+2. Increased natural gas prices (Henry Hub spot: \/MMBtu vs \.50 in 1999).
+3. Structural flaws in California deregulation framework.
+4. Insufficient long-term contracts by utilities (PG&E, SCE, SDG&E).
+
+Proposed Enron response:
+- Offer 500 MW at \/MWh under 6-month forward contract.
+- Total contract value: approximately \ million.
+- Recommend immediate engagement with CPUC and Governor's office.
+
+PAGE 3 - RISK ASSESSMENT
+Credit risk: PG&E and SCE face potential bankruptcy if wholesale prices remain elevated.
+Regulatory risk: FERC may impose price caps; monitor Rule 59 proceedings.
+Recommendation: Limit exposure to California spot market; focus on forward contracts.

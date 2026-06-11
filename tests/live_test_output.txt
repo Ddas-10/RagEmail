@@ -1,0 +1,170 @@
+========================================================================
+LIVE MULTI-THREAD TEST  (20 turns)
+========================================================================
+
+[01/20]  FERC/summary
+  Thread : T-5CADBCA8
+  Query  : Summarise the whole email thread
+  Cluster: expected=summary
+  Status : cluster:OK | grounding:100% | attempt:2 | citations:3 | ms:4806
+  Answer : I agree with much of what Jeff has written. On the risk management issue, FERC itself said "The single most important  remedy that California market needs is the elimination of rules that prevent  market participants from managing risk". [msg: <32518997.1075843014760.JavaMail.evans@thyme>] Please let me know if I've  misconstrued anything. [msg: <20496632.1075843203293.JavaMail.evans@thyme>]  **Sources:** - [msg: <32518997.1075843014760.JavaMail.evans@thyme>]  (confidence: 100%) - [msg: <2049663…
+  Sources: 32518997.1075843 | 32518997.1075843 | 20496632.1075843
+
+[02/20]  FERC/person
+  Thread : T-5CADBCA8
+  Query  : Who are the people involved in this thread?
+  Cluster: expected=person
+  Status : cluster:OK | grounding:0% | attempt:2 | citations:0 | ms:11995
+  Answer : Participants: Jeff Dasovich, Karen Denne, David Parquet, James Steffes, Joe Hartsoe, Mary Hain, Mona Petrochko, Paul Kaufman. [msg: <1184936.1075843203225.JavaMail.evans@thyme>]
+
+[03/20]  FERC/approval
+  Thread : T-5CADBCA8
+  Query  : What is Enron's position on FERC price caps?
+  Cluster: expected=approval
+  Status : cluster:OK | grounding:100% | attempt:3 | citations:2 | ms:52651
+  Answer : I agree with much of what Jeff has written. [msg: <13846896.1075843014891.JavaMail.evans@thyme>] Enron's position on FERC price caps [msg: <804128.1075843014657.JavaMail.evans@thyme>] Something to the effect of  "The price caps send the wrong message to the marketplace. [msg: <17098948.1075843203316.JavaMail.evans@thyme>]  **Sources:** - [msg: <13846896.1075843014891.JavaMail.evans@thyme>]  (confidence: 100%) - [msg: <17098948.1075843203316.JavaMail.evans@thyme>]  (confidence: 81%)
+  Sources: 13846896.1075843 | 17098948.1075843
+
+[04/20]  FERC/timeline
+  Thread : T-5CADBCA8
+  Query  : When were these events communicated?
+  Cluster: expected=timeline
+  Status : cluster:OK | grounding:100% | attempt:2 | citations:4 | ms:9345
+  Answer : **Timeline:** - 11/01/2000: It's getting in the way  of the positive message, and the math turns out to be a bit "Goreish."   (read: fuzzy)  I found [msg: <31158051.1075843015559.JavaMail.evans@thyme>]  It's getting in the way  of the positive message, and the math turns out to be a bit "Goreish."   (read: fuzzy)  I found myself wandering down all sorts of blind alleys in my  spin to Dow Jones. [msg: <31158051.1075843015559.JavaMail.evans@thyme>] In the seventies or the old Soviet Union, price c…
+  Sources: 31158051.1075843 | 17098948.1075843 | 12876838.1075843
+
+[05/20]  Succession/summary
+  Thread : T-9114D5B0
+  Query  : What is this email thread about?
+  Cluster: expected=summary
+  Status : cluster:OK | grounding:100% | attempt:2 | citations:6 | ms:485
+  Answer : Enron could not have  asked for two finer leaders than both you and Ken. [msg: <7525272.1075840079948.JavaMail.evans@thyme>] As you build your "new  administration," let me know if there is anything I can do to help. [msg: <26340240.1075840094225.JavaMail.evans@thyme>] We are in for an exciting time, and I'm proud to be part of this organization. [msg: <8720012.1075840096717.JavaMail.evans@thyme>] I hope I still have the  opportunity to work with you in your revised role. [msg: <32158059.1075840…
+  Sources: 7525272.10758400 | 26340240.1075840 | 8720012.10758400
+
+[06/20]  Succession/person
+  Thread : T-9114D5B0
+  Query  : Who are the participants in this conversation?
+  Cluster: expected=person
+  Status : cluster:OK | grounding:0% | attempt:2 | citations:0 | ms:8236
+  Answer : Participants: Dennis Alexander, Ashok Mehta, Rosalee Fleming, David Haug, Kenneth Lay, Rex Shelby, Michael Horning, Jeffrey Mcmahon. [msg: <13008985.1075840093502.JavaMail.evans@thyme>] It is my great pleasure to announce that the Board has accepted my  recommendation to appoint Jeff Skilling as chief executive officer, effective  at the time of their next board meeting on February 12, 2001. [msg: <10597607.1075840079991.JavaMail.evans@thyme>]
+
+[07/20]  Succession/status
+  Thread : T-9114D5B0
+  Query  : What is the status of the leadership transition?
+  Cluster: expected=status
+  Status : cluster:OK | grounding:100% | attempt:2 | citations:4 | ms:15251
+  Answer : Our succession plan has been clear for some time. Jeff will also  retain his duties as president and chief operating officer. [msg: <12446788.1075840092784.JavaMail.evans@thyme>] - Recommended timeline for transition: Q1 2001 if Lay moves to Chairman-only role. [msg: <10149359.1075840254949.JavaMail.evans@thyme>] Your leadership has been  a major factor in making Enron the leading company that is it and I am  looking forward to seeing Enron move to even greater heights under that  leadership in …
+  Sources: 12446788.1075840 | 12446788.1075840 | 10149359.1075840
+
+[08/20]  Succession/timeline
+  Thread : T-9114D5B0
+  Query  : When did the key announcements happen?
+  Cluster: expected=timeline
+  Status : cluster:OK | grounding:100% | attempt:2 | citations:1 | ms:19105
+  Answer : **Timeline:** - February 12, 2001: It is my great pleasure to announce that the Board has accepted my  recommendation to appoint Jeff Skilling as chief exe [msg: <10597607.1075840079991.JavaMail.evans@thyme>]  The Board has accepted my recommendation to appoint Jeff Skilling as chief executive officer, effective at the time of their next board meeting on February 12, 2001. [msg: <10597607.1075840079991.JavaMail.evans@thyme>]  **Sources:** - [msg: <10597607.1075840079991.JavaMail.evans@thyme>]  (…
+  Sources: 10597607.1075840
+
+[09/20]  Congrats/summary
+  Thread : T-BADA59FE
+  Query  : Give me an overview of this thread
+  Cluster: expected=summary
+  Status : cluster:OK | grounding:100% | attempt:2 | citations:10 | ms:251
+  Answer : I'm sure you already know how well  everyone in the ranks is receiving the news. You and Enron are truly amazing. [msg: <9167305.1075840093775.JavaMail.evans@thyme>] Your Mother and I are so proud. [msg: <28943672.1075840095850.JavaMail.evans@thyme>] I would love to get together for lunch in the near future, though January is  typically a tough month for me. Your e-mail was such a pleasant surprise! [msg: <18951294.1075845517805.JavaMail.evans@thyme>] It's great to hear the news. [msg: <3188885.…
+  Sources: 9167305.10758400 | 28943672.1075840 | 18951294.1075845
+
+[10/20]  Congrats/person
+  Thread : T-BADA59FE
+  Query  : Who sent congratulations messages?
+  Cluster: expected=person
+  Status : cluster:OK | grounding:0% | attempt:2 | citations:0 | ms:2305
+  Answer : Participants: Jeff Skilling, Sherri Sera, Richard Francis, Vince Middleton, Ronald Ridlehuber, Kevin Rollins, Regina Karsolich, Jeff Dasovich. [msg: <1182899.1075840081001.JavaMail.evans@thyme>]
+
+[11/20]  Congrats/approval
+  Thread : T-BADA59FE
+  Query  : Was anything formally approved or decided?
+  Cluster: expected=approval
+  Status : cluster:OK | grounding:100% | attempt:2 | citations:2 | ms:11987
+  Answer : It's great to hear the news. [msg: <1182899.1075840081001.JavaMail.evans@thyme>] What wonderful news for you, Jeff, and it sounds as though you will now have  two plates full. [msg: <25047450.1075840096758.JavaMail.evans@thyme>] I'm sure you already know how well  everyone in the ranks is receiving the news. [msg: <16775777.1075840081025.JavaMail.evans@thyme>]  **Sources:** - [msg: <1182899.1075840081001.JavaMail.evans@thyme>]  (confidence: 100%) - [msg: <25047450.1075840096758.JavaMail.evans@th…
+  Sources: 1182899.10758400 | 25047450.1075840
+
+[12/20]  PerfReview/summary
+  Thread : T-134D3F1C
+  Query  : Summarize this email thread
+  Cluster: expected=summary
+  Status : cluster:OK | grounding:100% | attempt:2 | citations:2 | ms:275
+  Answer : NOTE:  YOU WILL RECEIVE THIS MESSAGE EACH TIME YOU ARE SELECTED AS A REVIEWER. If you have any questions regarding PEP or your responsibility in the  process, please contact the PEP Help Desk at: [msg: <11804091.1075840222684.JavaMail.evans@thyme>] Houston: 1.713.853.4777, Option 4 London:  44.207.783.4040, Option 4 Email: perfmgmt@enron.com Employee Name                   Supervisor Name                 Date Selected -------------                   ---------------                 ------------- …
+  Sources: 11804091.1075840 | 11804091.1075840
+
+[13/20]  PerfReview/status
+  Thread : T-134D3F1C
+  Query  : What is the performance review process status?
+  Cluster: expected=status
+  Status : cluster:OK | grounding:100% | attempt:2 | citations:2 | ms:14387
+  Answer : You have been selected to participate in the Year End 2000 Performance  Management process by providing meaningful feedback on specific employee(s). Your feedback plays an important role in the process, and your participation  is critical to the success of Enron's Performance Management goals. [msg: <18071830.1075840248571.JavaMail.evans@thyme>]  **Sources:** - [msg: <18071830.1075840248571.JavaMail.evans@thyme>]  (confidence: 100%)
+  Sources: 18071830.1075840 | 18071830.1075840
+
+[14/20]  PerfReview/person
+  Thread : T-134D3F1C
+  Query  : Who is involved in the performance review?
+  Cluster: expected=person
+  Status : cluster:OK | grounding:0% | attempt:2 | citations:0 | ms:6894
+  Answer : Participants: Jeff Dasovich. [msg: <5516641.1075843147392.JavaMail.evans@thyme>]
+
+[15/20]  TalkingPts/summary
+  Thread : T-ADC28EE6
+  Query  : What is this email thread about?
+  Cluster: expected=summary
+  Status : cluster:OK | grounding:100% | attempt:2 | citations:2 | ms:138
+  Answer : Is there any concern about our putting some of these thoughts in writing and what might happen if that writing becomes public? I will trust your and the PR group's analysis of that issue--I just throw it out for consideration. [msg: <15630801.1075843765692.JavaMail.evans@thyme>]  **Sources:** - [msg: <15630801.1075843765692.JavaMail.evans@thyme>]  (confidence: 100%)
+  Sources: 15630801.1075843 | 15630801.1075843
+
+[16/20]  TalkingPts/approval
+  Thread : T-ADC28EE6
+  Query  : What was approved or needs approval in this thread?
+  Cluster: expected=approval
+  Status : cluster:OK | grounding:100% | attempt:2 | citations:2 | ms:22516
+  Answer : Comments on the  Governor's proposals are appreciated. [msg: <25155192.1075843837443.JavaMail.evans@thyme>] 3rd set of suggestions We have missed the opportunity to make our points to i) share existing generation, ii) treat all customers the same Could we include the following: Customers are continuously making decision related to who should provide them with service and whether they should relocate in Ca [msg: <167032.1075843765869.JavaMail.evans@thyme>] We are missing in decreasing load sectio…
+  Sources: 25155192.1075843 | 167032.107584376
+
+[17/20]  TalkingPts/timeline
+  Thread : T-ADC28EE6
+  Query  : What is the timeline of decisions in this thread?
+  Cluster: expected=timeline
+  Status : cluster:OK | grounding:100% | attempt:2 | citations:1 | ms:21390
+  Answer : **Timeline:** - June 1, 2001: missing Concrete suggestions:  California Energy Commission sponsored process to determine and implement  actions that w [msg: <9224663.1075843765719.JavaMail.evans@thyme>]  3rd set of suggestions We have missed the opportunity to make our points to i) share existing generation, ii) treat all customers the same Could we include the following: Customers are continuously making decision related to who should provide them with service and whether they should relocate i…
+  Sources: 167032.107584376
+
+[18/20]  FERC-tariff/summary
+  Thread : T-F31891E0
+  Query  : Summarize what this thread discusses
+  Cluster: expected=summary
+  Status : cluster:OK | grounding:100% | attempt:2 | citations:5 | ms:188
+  Answer : If  so, make sense to have Bracewell (Ron Carroll?) and Mike Day on as well? [msg: <28070282.1075843317214.JavaMail.evans@thyme>] Ron works for Dan Watkiss, who also  handles a lot of that work for us . Ron Carrol works at Bracewell and he handles a lot of our FERC-related PX and  ISO activity, including tariff activity. [msg: <10548885.1075843839026.JavaMail.evans@thyme>] I have talked with Rick Shapiro on this issue. I will see if they can be on the call, but it  would be a good idea to have M…
+  Sources: 28070282.1075843 | 10548885.1075843 | 10548885.1075843
+
+[19/20]  FERC-tariff/person
+  Thread : T-F31891E0
+  Query  : Who are the key people mentioned?
+  Cluster: expected=person
+  Status : cluster:OK | grounding:0% | attempt:2 | citations:0 | ms:6749
+  Answer : Participants: Richard Shapiro, Jeff Dasovich, Vicki Sharp, Mike Smith, Wanda Curry, Don Black, Marty Sunde, Dennis Benevides. [msg: <12234685.1075843316844.JavaMail.evans@thyme>]
+
+[20/20]  FERC-tariff/timeline
+  Thread : T-F31891E0
+  Query  : When were the main activities in this thread?
+  Cluster: expected=timeline
+  Status : cluster:OK | grounding:100% | attempt:2 | citations:1 | ms:9864
+  Answer : **Timeline:** - 01/04/2001: Yes, I'll get to Mike Day. [msg: <10281354.1075843316972.JavaMail.evans@thyme>]  Brief Summary of Today's Activities in California (at Least Thus Far) [msg: <24928023.1075843317025.JavaMail.evans@thyme>]  **Sources:** - [msg: <24928023.1075843317025.JavaMail.evans@thyme>]  (confidence: 100%)
+  Sources: 24928023.1075843
+
+========================================================================
+SUMMARY: 20 turns across 6 threads
+  PASS (all checks) : 20/20
+  Cluster correct   : 20/20
+  Grounding >=80%   : 20/20
+  Quality clean     : 20/20  (no header/non-ASCII/addr leaks)
+  Retries triggered : 1
+  Latency p50       : 9345ms
+  Latency p95       : 52651ms
+  Latency max       : 52651ms
+========================================================================

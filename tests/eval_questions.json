@@ -1,0 +1,167 @@
+{
+  "description": "10 sample questions over the 'succession plan' thread. message_ids with REPLACE_WITH_REAL_ID will be auto-passed by run_eval.py — update after inspecting data/index/chunks.json.",
+  "thread_id": "T-9114D5B0",
+  "conversations": [
+    {
+      "id": "Q1",
+      "turn": 1,
+      "query": "What is the main topic of this thread?",
+      "expected": {
+        "must_include": ["succession", "plan"],
+        "must_cite": [],
+        "agent_routing": [
+          "entity_resolution → metadata_prefilter (no ambiguity)",
+          "query_expansion: cluster=status, stepback='what is the main subject'",
+          "query_breakdown → 1 sub-query",
+          "citation_validator → respond"
+        ],
+        "notes": "Baseline: RAPTOR root chunk should surface for broad thread-level question."
+      }
+    },
+    {
+      "id": "Q2",
+      "turn": 2,
+      "query": "Who are the key people mentioned in it?",
+      "expected": {
+        "must_include": [],
+        "must_cite": [],
+        "agent_routing": [
+          "entity_resolution resolves 'it' → thread/succession plan from Q1 register",
+          "query_expansion: cluster=person",
+          "query_breakdown → 1 sub-query (scope=email)",
+          "citation_validator → respond"
+        ],
+        "notes": "Tests pronoun resolution ('it') across turns + person entity extraction."
+      }
+    },
+    {
+      "id": "Q3",
+      "turn": 3,
+      "query": "When were those emails sent?",
+      "expected": {
+        "must_include": [],
+        "must_cite": [],
+        "agent_routing": [
+          "entity_resolution resolves 'those emails' → context from Q1/Q2",
+          "query_expansion: cluster=timeline",
+          "timeline_synthesis fires (temporal)",
+          "citation_validator → respond"
+        ],
+        "notes": "Tests temporal routing + timeline synthesis."
+      }
+    },
+    {
+      "id": "Q4",
+      "turn": 1,
+      "query": "What does the attached document say about the succession plan?",
+      "expected": {
+        "must_include": ["succession"],
+        "must_cite": [
+          {"type": "attachment", "message_id": "10149359.1075840254949.JavaMail.evans@thyme", "page": 1}
+        ],
+        "agent_routing": [
+          "metadata_prefilter: scope_hint=attachment",
+          "query_breakdown → 1 sub-query (scope=attachment)",
+          "citation_validator: page_no validated"
+        ],
+        "notes": "Tests attachment-scoped retrieval + page citation."
+      }
+    },
+    {
+      "id": "Q5",
+      "turn": 5,
+      "query": "No, I meant the email about Skilling not the document",
+      "expected": {
+        "must_include": [],
+        "must_cite": [],
+        "agent_routing": [
+          "entity_resolution detects correction ('no, I meant')",
+          "entity_register updated: promotes Skilling-related email",
+          "clarify_needed=False (correction provides context)"
+        ],
+        "notes": "Tests explicit correction handling."
+      }
+    },
+    {
+      "id": "Q6",
+      "turn": 1,
+      "query": "Summarise the whole thread",
+      "expected": {
+        "must_include": ["succession"],
+        "must_cite": [],
+        "agent_routing": [
+          "query_expansion: stepback hits RAPTOR root chunk",
+          "retrieval returns RAPTOR intermediate + root chunks",
+          "citation_validator → respond"
+        ],
+        "notes": "Tests RAPTOR tree retrieval for whole-thread summarisation."
+      }
+    },
+    {
+      "id": "Q7",
+      "turn": 1,
+      "query": "What is on page 1 of the attachment?",
+      "expected": {
+        "must_include": [],
+        "must_cite": [
+          {"type": "attachment", "message_id": "10149359.1075840254949.JavaMail.evans@thyme", "page": 1}
+        ],
+        "agent_routing": [
+          "metadata_prefilter: scope_hint=attachment",
+          "query_breakdown → 1 sub-query (scope=attachment)",
+          "citation_validator: page_no=1 validated"
+        ],
+        "notes": "Tests page-level citation precision."
+      }
+    },
+    {
+      "id": "Q8",
+      "turn": 1,
+      "query": "What happened with the executive succession planning?",
+      "expected": {
+        "must_include": ["succession"],
+        "must_cite": [
+          {"type": "email", "message_id": "12446788.1075840092784.JavaMail.evans@thyme"}
+        ],
+        "agent_routing": [
+          "query_expansion: cluster=status, HyDE generates hypothetical succession email",
+          "retrieval: all 3 expansion queries → RRF fusion → reranker",
+          "citation_validator → respond"
+        ],
+        "notes": "Tests HyDE effectiveness on status queries."
+      }
+    },
+    {
+      "id": "Q9",
+      "turn": 1,
+      "query": "Who first brought up the succession plan?",
+      "expected": {
+        "must_include": [],
+        "must_cite": [
+          {"type": "email", "message_id": "12446788.1075840092784.JavaMail.evans@thyme"}
+        ],
+        "agent_routing": [
+          "query_expansion: cluster=person + timeline (temporal: 'first')",
+          "timeline_synthesis fires",
+          "events sorted chronologically"
+        ],
+        "notes": "Tests timeline synthesis for origin questions."
+      }
+    },
+    {
+      "id": "Q10",
+      "turn": 1,
+      "query": "Tell me about this thread",
+      "expected": {
+        "must_include": [],
+        "clarify_should_fire": false,
+        "agent_routing": [
+          "entity_resolution: 'this thread' is unambiguous in context — no clarify",
+          "query_expansion: cluster=status",
+          "citation_validator: grounding may trigger retry if broad query"
+        ],
+        "notes": "Graceful handling of broad open-ended questions without clarify overfire."
+      }
+    }
+  ]
+}

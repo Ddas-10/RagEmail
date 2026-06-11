@@ -1,0 +1,47 @@
+# Core pipeline
+langgraph>=0.2.0
+langchain-core>=0.2.0
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.0.0
+
+# Email parsing
+# mail-parser is only needed if you use it directly; the stdlib `email` module is used here
+python-dateutil>=2.9.0
+dateparser>=1.2.0
+
+# Attachment parsing
+pymupdf>=1.24.0
+python-docx>=1.1.0
+mammoth>=1.6.0
+pytesseract>=0.3.10   # OCR for scanned PDFs; requires Tesseract installed
+
+# NLP + NER
+spacy>=3.7.0
+# After install: python -m spacy download en_core_web_sm
+
+# Retrieval
+rank-bm25>=0.2.2
+faiss-cpu>=1.8.0
+sentence-transformers>=3.0.0,<4.0.0
+setfit>=1.0.0
+
+# RAPTOR clustering
+umap-learn>=0.5.6
+scikit-learn>=1.5.0
+
+# Summarisation (RAPTOR summaries + HyDE generation)
+transformers>=4.40.0,<5.0.0
+torch>=2.2.0
+sentencepiece>=0.2.0   # required by some tokenisers (flan-t5, mT5)
+
+# UI
+streamlit>=1.35.0
+requests>=2.32.0       # used by ui/app.py and tests/run_eval.py
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+
+# Misc
+httpx>=0.27.0          # optional async HTTP client (useful for testing FastAPI)
